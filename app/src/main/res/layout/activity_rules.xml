@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <TextView
+        android:id="@+id/txtTitleRules"
+        android:layout_width="186dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="RULES"
+        android:textAlignment="center"
+        android:textColor="#542C55"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.071" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationGoBack"
+        android:layout_width="255dp"
+        android:layout_height="147dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginBottom="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="goBack.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/txtChoose"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="Choose a topic:"
+        android:textAlignment="center"
+        android:textColor="#542C55"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="105dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="636dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/atomic_age"
+        android:textColor="#432344"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <Spinner
+        android:id="@+id/spnTopic"
+        android:layout_width="205dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="10dp"
+        android:defaultFocusHighlightEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtChoose"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtContenuto"
+        android:layout_width="336dp"
+        android:layout_height="512dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="36dp"
+        android:background="#F9F8FA"
+        android:fontFamily="@font/atomic_age"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:textColor="#80542C55"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChoose" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

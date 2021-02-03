@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnAux"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/atomic_age"
+        android:text="zone's info"
+        android:textColor="#e7eefb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRegione"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:background="@drawable/secbtn"
+        android:fontFamily="@font/atomic_age"
+        android:text="Change Locality"
+        android:textColor="#432344"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRefresh"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="492dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/title"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/txtRegione"
+        android:layout_width="210dp"
+        android:layout_height="91dp"
+        android:fontFamily="@font/atomic_age"
+        android:textAlignment="center"
+        android:textColor="#80542C55"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleLocality"
+        app:layout_constraintVertical_bias="0.137" />
+
+    <TextView
+        android:id="@+id/txtTitleLocality"
+        android:layout_width="130dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/atomic_age"
+        android:text="Locality:"
+        android:textAlignment="center"
+        android:textColor="#542C55"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433" />
+
+    <TextView
+        android:id="@+id/txtLocality"
+        android:layout_width="210dp"
+        android:layout_height="41dp"
+        android:fontFamily="@font/atomic_age"
+        android:textAlignment="center"
+        android:textColor="#80542C55"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleLocality"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="198dp"
+        android:layout_height="51dp"
+        android:background="@drawable/secbtn"
+        android:fontFamily="@font/atomic_age"
+        android:text="Refresh"
+        android:textColor="#432344"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAux"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+    <Button
+        android:id="@+id/btnColor"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/secbtn"
+        app:layout_constraintBottom_toTopOf="@+id/btnAux"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationConnection"
+        android:layout_width="267dp"
+        android:layout_height="213dp"
+        android:layout_marginBottom="536dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="noConnection.json"
+        app:lottie_loop="true" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
