@@ -75,7 +75,6 @@ import jxl.Workbook;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int PERMISSION_FINE_LOCATION = 99;
     //-------------------------------------------------------------------------------------------------
     //                                           VARIABLES
     //-------------------------------------------------------------------------------------------------
