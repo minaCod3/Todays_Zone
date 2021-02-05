@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Today\'s Zone</string>
+    <string-array name="topic">
+        <item>-</item>
+        <item>Attivita commerciali</item>
+        <item>Attivita culturali</item>
+        <item>Attivita personali</item>
+        <item>Attivita sportiva</item>
+        <item>Lavoro</item>
+        <item>Mascherina</item>
+        <item>Spostamenti</item>
+        <item>Uffici Pubblici</item>
+        <item>Universita</item>
+        <item>Violazioni e sanzioni</item>
+    </string-array>
+    <string name="map_key" trnslatable="false">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+</resources>
